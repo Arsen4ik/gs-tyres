@@ -1,0 +1,31 @@
+#card-tyre {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1 fr;
+    // margin-left: auto;
+    // margin-right: auto;
+    // display: flex;
+    // justify-content: space-around;
+    // flex-direction: column;
+    margin-bottom: 82px;
+   
+}
+
+table {
+    margin-bottom: 82px;
+    max-width: 80%;
+     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    border-bottom: 1px solid red;
+}
+
+
+@media only screen and (min-width: 560px) {
+    #card-tyre{
+        display: flex;
+       
+        justify-content: space-around;
+    }
+
+    
+} 
