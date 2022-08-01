@@ -1,7 +1,7 @@
 figure.mainbanner {
   width: 100%;
   display: grid;
-  margin-top: 56px;
+  // margin-top: 56px;
 
   font-size: 64px;
   grid-column: 1/2;
@@ -9,10 +9,10 @@ figure.mainbanner {
 
   overflow: hidden;
 
-  :hover {
-    transform: scale(1.1);
-    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-  }
+  // :hover {
+  //   transform: scale(1.1);
+  //   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  // }
 }
 
 figure.mainbanner img {

@@ -16,7 +16,7 @@ const MainList = () => {
   useEffect(() => {
     gsap.to(element.current, {
       rotation: 360,
-      duration: 4,
+      duration: 7,
       ease: "none",
       repeat: -1,
     });

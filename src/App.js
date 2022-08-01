@@ -14,6 +14,7 @@ import CarSuvVans from './components/CarSuvVans/CarSuvVans'
 import TyreDetails from "./components/TyreDetails/TyreDetails";
 import Agriculture from "./components/Agriculture/Agriculture";
 import Trucks from "./components/Trucks/Trucks";
+import Contacts from "./components/Contacts";
 
 function App() {
   // store a reference to the box div
@@ -37,6 +38,7 @@ function App() {
         <Route path='/agriculture' element={<Agriculture />} />
         <Route path='/trucks' element={<Trucks />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contacts />} />
         <Route path="/" element={<Home />} />
       </Routes>
   
