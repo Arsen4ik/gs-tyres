@@ -9,7 +9,7 @@ import { ListGroup } from "react-bootstrap";
 
 const MainList = () => {
   const navigateTo = useNavigate();
-  const data = ["Шины для легковых машин".toUpperCase(), "Шины для грузовых машин".toUpperCase(), " Шины для сельскохозяйственной техники".toUpperCase()];
+  const data = ["Шины для легковых автомобилей".toUpperCase(), "Шины для грузовых автомобилей".toUpperCase(), " Шины для сельскохозяйственной техники".toUpperCase()];
   // const data = ["CAR, SUV & VAN", "TRUCKS", "AGRICULTURAL & INDUSTRIAL"];
   const element = useRef();
   //   const q = gsap.utils.selector(element);
@@ -45,7 +45,7 @@ const MainList = () => {
         
           {data.map((el, idx) => (
             <div
-              className="lst bg-blue"
+              className="lst bg-dark-gray"
               value={idx}
               key={idx}
               name={idx}

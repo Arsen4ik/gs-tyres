@@ -19,19 +19,15 @@ const Contacts = () => {
     <>
 
       <section className="mw5 mw7-ns center bg-light-gray pa3 ph5-ns pt6 bg-light-green">
-        <h3 className="ma1 ">Концерн Artawheel Tire lndustrial Complex является крупнеишим производителем радиальных шин в Иране.</h3>
+        <h2 className="ma1">Контакты:</h2>
         <br />
-        <h3 className="ma1 ">Три завода производят легковые, грузовые и сельхоз шины под брендами Goldstone, Razi и Yazd.
-          Продукция концерна Artawheel Tire lndustrial Complex отличается высоким качеством и надежностью. Вся продукция производится на новейшем оборудовании.
-          В 2022 году компания приняла решение об открытии официального представительства на территории Российской Федерации для реализации товара в странах Евразийского союза. </h3>
-        <br />
-        <h2 className="ma1 bg-lightest-blue">Контакты:</h2>
+
         <address>
-          <a href="mailto:rinat@gs-tyres.com">rinat@gs-tyres.com</a>
+          <a href="mailto:rinat@gs-tyres.com" className="f4 fw6 db navy link dim">rinat@gs-tyres.com</a>
           <br />
-          <a href="mailto:sales@gs-tyres.com">sales@gs-tyres.com</a>
+          <a href="mailto:sales@gs-tyres.com" className="f4 fw6 db dark-blue link dim">sales@gs-tyres.com</a>
           <br />
-          <a href="tel:+79961232940">+7 (996) 123-29-40</a>
+          <a href="tel:+79961232940" className="f4 fw6 db blue link dim">+7 (996) 123-29-40</a>
           <h5>Республика Татарстан, Казань</h5>
         </address>
         {/* <p className="lh-copy measure">
