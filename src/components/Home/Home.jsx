@@ -10,17 +10,18 @@ const Home = () => (
     <figure className="mainbanner">
       <img  alt="" />
       <figcaption>
-        <span className="slogan">LIFE </span>IN MOTION
+        <span className="slogan f-headline lh-solid">LIFE </span>IN MOTION
         {/* <span className="slogan">ARTAWHEEL</span>TIRE INDUSTRIAL COMPLEX */}
       </figcaption>
     </figure>
+    <h2 className="dark-gray f1 lh-title"><span className="dark-red ">ARTAWHEEL</span> TIRE INDUSTRIAL COMPLEX</h2>
+    <br />
     <MainList />  
  
-    <h2 className="blue">ARTAWHEEL TIRE INDUSTRIAL COMPLEX</h2>
-    <br />
+   
     <img className="logos"  src={gs} alt="gs-logo" />
     <img className="logos" src={razi} alt="razi-logo" />
-    <img className="logos" src={yazd} alt="yazd-logo" />
+    <img className="yazd" src={yazd} alt="yazd-logo" />
   </>
 );
 

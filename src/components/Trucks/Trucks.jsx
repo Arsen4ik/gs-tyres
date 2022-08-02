@@ -31,7 +31,7 @@ function Trucks() {
                 <th className="fw6 tl pa3 bg-white ">№</th>
                 <th className="fw6 tl pa3 bg-white">Размер</th>
                 <th className="fw6 tl pa3 bg-white">Ось установки</th>
-                <th className="fw6 tl pa3 bg-white">Индекс скорости</th>
+                <th className="fw6 tl pa3 bg-white">Индекс скорости/нагрузки</th>
               </tr>
             </thead>
             <tbody className="lh-copy">
@@ -39,7 +39,7 @@ function Trucks() {
                 <td className="pa3">1</td>
                 <td className="pa3">315/80/22.5</td>
                 <td className="pa3">рулевая</td>
-                <td className="pa3">L156/150</td>
+                <td className="pa3">L/ 156/150</td>
               </tr>
             </tbody>
           </table>
@@ -56,7 +56,7 @@ function Trucks() {
                 <th className="fw6 tl pa3 bg-white">№</th>
                 <th className="fw6 tl pa3 bg-white">Размер</th>
                 <th className="fw6 tl pa3 bg-white">Ось установки</th>
-                <th className="fw6 tl pa3 bg-white">Индекс скорости</th>
+                <th className="fw6 tl pa3 bg-white">Индекс скорости/нагрузки</th>
               </tr>
             </thead>
             <tbody className="lh-copy">
@@ -64,7 +64,7 @@ function Trucks() {
                 <td className="pa3">2</td>
                 <td className="pa3">315/80/22.5</td>
                 <td className="pa3">ведущая</td>
-                <td className="pa3">L154/150</td>
+                <td className="pa3">L/ 154/150</td>
               </tr>
             </tbody>
           </table>
@@ -81,7 +81,7 @@ function Trucks() {
                 <th className="fw6 tl pa3 bg-white">№</th>
                 <th className="fw6 tl pa3 bg-white">Размер</th>
                 <th className="fw6 tl pa3 bg-white">Ось установки</th>
-                <th className="fw6 tl pa3 bg-white">Индекс скорости</th>
+                <th className="fw6 tl pa3 bg-white">Индекс скорости/нагрузки</th>
               </tr>
             </thead>
             <tbody className="lh-copy">
@@ -89,7 +89,7 @@ function Trucks() {
                 <td className="pa3">3</td>
                 <td className="pa3">385/65/22.5</td>
                 <td className="pa3">прицепная</td>
-                <td className="pa3">L158</td>
+                <td className="pa3">L/ 158</td>
               </tr>
             </tbody>
           </table>
@@ -106,7 +106,7 @@ function Trucks() {
                 <th className="fw6 tl pa3 bg-white">№</th>
                 <th className="fw6 tl pa3 bg-white">Размер</th>
                 <th className="fw6 tl pa3 bg-white">Ось установки</th>
-                <th className="fw6 tl pa3 bg-white">Индекс скорости</th>
+                <th className="fw6 tl pa3 bg-white">Индекс скорости/нагрузки</th>
               </tr>
             </thead>
             <tbody className="lh-copy">
@@ -114,7 +114,7 @@ function Trucks() {
                 <td className="pa3">4</td>
                 <td className="pa3">385/65/22.5</td>
                 <td className="pa3">прицепная</td>
-                <td className="pa3">L160</td>
+                <td className="pa3">L/ 160</td>
               </tr>
             </tbody>
           </table>

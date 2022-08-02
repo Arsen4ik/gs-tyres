@@ -45,7 +45,7 @@ const MainList = () => {
         
           {data.map((el, idx) => (
             <div
-              className="lst bg-dark-gray"
+              className="lst bg-mid-gray"
               value={idx}
               key={idx}
               name={idx}

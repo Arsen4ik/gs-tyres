@@ -59,10 +59,12 @@ figure.mainbanner img {
     align-self: center;
 
     opacity: 0.85;
+    text-shadow: 1px 1px 2px red, 0 0 1em #8d1a05, 0 0 0.2em #8d1a05;
 
     .slogan {
       color: #8d1a05;
       // font-family:  cursive;
+     
     }
   }
 
@@ -81,5 +83,10 @@ figure.mainbanner img {
 
 .logos {
   height: 200px;
-  width: 200px;
+  width: 230px;
+}
+
+.yazd {
+  height: 182px;
+  width: 300px;
 }
