@@ -7,7 +7,7 @@ import cardImage from "../../assets/card-image.png";
 import FigureComponent from "../FigureComponent/FigureComponent";
 import pic from "../../assets/Truck.jpg";
 
-import "./Trucks.scoped.scss";
+
 
 function Trucks() {
   const navigateTo = useNavigate();
@@ -17,91 +17,113 @@ function Trucks() {
       <figure className="mainbanner">
         <img src={pic} alt="tractor" />
         <figcaption>
-          {/* <span className="sloganTractor">Шины для сельскохозяйственной техники</span> */}
-      
+          <span className="sloganTractor">Шины для грузовых автомобилей</span>
         </figcaption>
       </figure>
 
-      <h1>Шины для грузовых автомобилей</h1>
+      <h2 className="f3 f2-m f1-l">RL4</h2>
 
-      <h2>RL4</h2>
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">№</th>
-            <th scope="col">Размер</th>
-            <th scope="col">Ось установки</th>
-            <th scope="col">Индекс скорости</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>315/80/22.5</td>
-            <td>рулевая</td>
-            <td>L156/150</td>
-          </tr> 
-        </tbody>
-      </table>
-      <h2>RT1</h2>
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">№</th>
-            <th scope="col">Размер</th>
-            <th scope="col">Ось установки</th>
-            <th scope="col">Индекс скорости</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>315/80/22.5</td>
-            <td>ведущая</td>
-            <td>L154/150</td>
-          </tr> 
-        </tbody>
-      </table>
-      <h2>RM1</h2>
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">№</th>
-            <th scope="col">Размер</th>
-            <th scope="col">Ось установки</th>
-            <th scope="col">Индекс скорости</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>385/65/22.5</td>
-            <td>прицепная</td>
-            <td>L158</td>
-          </tr> 
-        </tbody>
-      </table>
-      <h2>RL2</h2>
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">№</th>
-            <th scope="col">Размер</th>
-            <th scope="col">Ось установки</th>
-            <th scope="col">Индекс скорости</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>385/65/22.5</td>
-            <td>прицепная</td>
-            <td>L160</td>
-          </tr> 
-        </tbody>
-      </table>
+      <div className="pa0">
+        <div className="overflow-auto">
+          <table className="f6 w-100 mw8" cellspacing="0">
+            <thead>
+              <tr className="stripe-dark">
+                <th className="fw6 tl pa3 bg-white ">№</th>
+                <th className="fw6 tl pa3 bg-white">Размер</th>
+                <th className="fw6 tl pa3 bg-white">Ось установки</th>
+                <th className="fw6 tl pa3 bg-white">Индекс скорости</th>
+              </tr>
+            </thead>
+            <tbody className="lh-copy">
+              <tr className="stripe-dark">
+                <td className="pa3">1</td>
+                <td className="pa3">315/80/22.5</td>
+                <td className="pa3">рулевая</td>
+                <td className="pa3">L156/150</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-      
+      <h2 className="f3 f2-m f1-l">RT1</h2>
+
+      <div className="pa0">
+        <div className="overflow-auto">
+          <table className="f6 w-100 mw8 center" cellspacing="0">
+            <thead>
+              <tr className="stripe-dark">
+                <th className="fw6 tl pa3 bg-white">№</th>
+                <th className="fw6 tl pa3 bg-white">Размер</th>
+                <th className="fw6 tl pa3 bg-white">Ось установки</th>
+                <th className="fw6 tl pa3 bg-white">Индекс скорости</th>
+              </tr>
+            </thead>
+            <tbody className="lh-copy">
+              <tr className="stripe-dark">
+                <td className="pa3">2</td>
+                <td className="pa3">315/80/22.5</td>
+                <td className="pa3">ведущая</td>
+                <td className="pa3">L154/150</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h2 className="f3 f2-m f1-l">RM1</h2>
+
+      <div className="pa0">
+        <div className="overflow-auto">
+          <table className="f6 w-100 mw8 center" cellspacing="0">
+            <thead>
+              <tr className="stripe-dark">
+                <th className="fw6 tl pa3 bg-white">№</th>
+                <th className="fw6 tl pa3 bg-white">Размер</th>
+                <th className="fw6 tl pa3 bg-white">Ось установки</th>
+                <th className="fw6 tl pa3 bg-white">Индекс скорости</th>
+              </tr>
+            </thead>
+            <tbody className="lh-copy">
+              <tr className="stripe-dark">
+                <td className="pa3">3</td>
+                <td className="pa3">385/65/22.5</td>
+                <td className="pa3">прицепная</td>
+                <td className="pa3">L158</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h2 className="f3 f2-m f1-l">RL2</h2>
+
+      <div className="pa0">
+        <div className="overflow-auto">
+          <table className="f6 w-100 mw8 center" cellspacing="0">
+            <thead>
+              <tr className="stripe-dark">
+                <th className="fw6 tl pa3 bg-white">№</th>
+                <th className="fw6 tl pa3 bg-white">Размер</th>
+                <th className="fw6 tl pa3 bg-white">Ось установки</th>
+                <th className="fw6 tl pa3 bg-white">Индекс скорости</th>
+              </tr>
+            </thead>
+            <tbody className="lh-copy">
+              <tr className="stripe-dark">
+                <td className="pa3">4</td>
+                <td className="pa3">385/65/22.5</td>
+                <td className="pa3">прицепная</td>
+                <td className="pa3">L160</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
     </>
   );
 }

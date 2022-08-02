@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import "./MainList.scoped.scss";
+import "./MainList.scss";
 import car from "../../assets/car-64.png";
 import tyre from "../../assets/tyre-rotation1.png";
 import { gsap } from "gsap";
@@ -23,14 +23,16 @@ const MainList = () => {
   });
 
   const handleListClick = (e) => {
-    if (e.target.value == 0) {
-      // console.log(e.target.value);
+    console.log(e.target)
+    const name = e.target.getAttribute('name')
+    if (name === '0') {
+      // console.log(name);
       navigateTo("/car-suv-vans");
-    } else if (e.target.value == 1) {
-      console.log(e.target.value);
+    } else if (name == 1) {
+      // console.log(e.target.value);
       navigateTo('/trucks')
-    } else if (e.target.value == 2) {
-      console.log(e.target.value);
+    } else if (name == 2) {
+      // console.log(e.target);
       navigateTo('/agriculture')
     } else {
       // console.log("no data");
@@ -40,21 +42,20 @@ const MainList = () => {
   return (
     <>
       <div id="list">
-        <ListGroup>
+        
           {data.map((el, idx) => (
-            <ListGroup.Item
-              className="bg-secondary text-light"
-              action
-              variant="primary"
+            <div
+              className="lst bg-blue"
               value={idx}
-              onClick={handleListClick}
               key={idx}
+              name={idx}
+              onClick={handleListClick}
             >
-              {el}
-            </ListGroup.Item>
+              <p className="dib v-mid fw4" onClick={handleListClick} name={idx} >{el}</p>
+            </div>
           ))}
-        </ListGroup>
       </div>
+
       <div id="main-tyre">
         <img src={tyre} ref={element} />
       </div>

@@ -8,18 +8,19 @@ import MainList from "../MainList/MainList";
 const Home = () => (
   <>
     <figure className="mainbanner">
-      <img src={banner} alt="" />
+      <img  alt="" />
       <figcaption>
-        <span className="slogan">ARTAWHEEL</span>TIRE INDUSTRIAL COMPLEX
+        <span className="slogan">LIFE </span>IN MOTION
+        {/* <span className="slogan">ARTAWHEEL</span>TIRE INDUSTRIAL COMPLEX */}
       </figcaption>
     </figure>
     <MainList />  
  
-    <h2 className="text-primary">КОНЦЕРН ARTAWHEEL. КРУПНЕЙШИЙ ИРАНСКИЙ ПРОИЗВОДИТЕЛЬ РАДИАЛЬНЫХ ШИН </h2>
+    <h2 className="blue">ARTAWHEEL TIRE INDUSTRIAL COMPLEX</h2>
     <br />
-    <img src={gs} alt="gs-logo" />
-    <img src={razi} alt="razi-logo" />
-    <img src={yazd} alt="yazd-logo" />
+    <img className="logos"  src={gs} alt="gs-logo" />
+    <img className="logos" src={razi} alt="razi-logo" />
+    <img className="logos" src={yazd} alt="yazd-logo" />
   </>
 );
 
