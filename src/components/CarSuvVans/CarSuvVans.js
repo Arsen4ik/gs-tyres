@@ -2,10 +2,11 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 
-import { Card, Button } from 'react-bootstrap'
+// import { Card, Button } from 'react-bootstrap'
 import cardImage from '../../assets/card-image.png'
 import FigureComponent from '../FigureComponent/FigureComponent'
 import pic from '../../assets/audi.jpg'
+import Card from '../Card'
 
 
 import "./CarSuvVans.scoped.scss";
@@ -13,48 +14,47 @@ import "./CarSuvVans.scoped.scss";
 
 function CarSuvVans(props) {
 
-    const navigateTo = useNavigate();
-    const cardData = [{
-        id: 0,
-        title: 'Size: 195x65 R15',
-        text: 'First all-season tyre fully focused on UHP segment. Unique performances in all-season segment.',
-        picture: cardImage
-    }, {
-        id: 1,
-        title: 'Size: 185x65 R15',
-        text: 'First all-season tyre fully focused on UHP segment. Unique performances in all-season segment.',
-        picture: cardImage
-    }, {
-        id: 2,
-        title: 'Size: 185x60 R14',
-        text: 'First all-season tyre fully focused on UHP segment. Unique performances in all-season segment. ',
-        picture: cardImage
-    },
-     {
-        id: 3,
-        title: 'Size: 205x55 R16',
-        text: 'First all-season tyre fully focused on UHP segment. Unique performances in all-season segment. ',
-        picture: cardImage
-    }]
+  const navigateTo = useNavigate();
+  const cardData = [{
+    id: 0,
+    name: 'GS-2020',
+    sizes: ['185/65/R15', '185/65/R14', '185/60/R14'],
+    loadIndex: '86',
+    speedIndex: 'H',
+    description: 'First all-season tyre fully focused on UHP segment. Unique performances in all-season segment.',
+    picture: cardImage
+  },
+  {
+    id: 1,
+    name: 'RG-550',
+    sizes: ['205/55/R16', '195/65/R15', '185/65/R15'],
+    loadIndex: '86',
+    speedIndex: 'H',
+    description: 'First all-season tyre fully focused on UHP segment. Unique performances in all-season segment.',
+    picture: cardImage
+  },
 
-    // const onCardClickHandler = (e) => {
-    //     // console.log(e.target.value)
-    //     navigateTo(`/tyre-details/${e.target.value}`, {state: cardData[e.target.value]}
-    //     )
+  ]
 
-    // }
+  // const onCardClickHandler = (e) => {
+  //     // console.log(e.target.value)
+  //     navigateTo(`/tyre-details/${e.target.value}`, {state: cardData[e.target.value]}
+  //     )
 
-    return (
-        <>
-         <figure className="mainbanner">
-            <img src={pic} alt="" />
-            <figcaption>
-               
-                    {/* <span className="slogan">Шины для легковых машин</span>{props.name2} */}
-               
-            </figcaption>
-        </figure>
-        {/* <div id='card-tyre'>
+  // }
+
+  return (
+    <>
+      <figure className="mainbanner">
+        <img src={pic} alt="" />
+        <figcaption>
+
+          <span className="slogan">Шины для легковых автомобилей</span>{props.name2}
+
+        </figcaption>
+      </figure>
+      {/* <h1>Шины для легковых автомобилей</h1> */}
+      {/* <div id='card-tyre'>
             {
                 cardData.map((el, idx) => {
                     return (
@@ -72,8 +72,19 @@ function CarSuvVans(props) {
                 })
             }
         </div> */}
-        <h1>Шины для легковых машин</h1>
-        <h2>GS-2020</h2>
+
+      {
+        cardData.map((el, idx) => {
+          return (
+            <div className='card-Container'>
+              <Card name={el.name} sizes={el.sizes} loadIndex={el.loadIndex} speedIndex={el.speedIndex} />
+            </div>
+
+          )
+        })
+      }
+
+      {/* <h2>GS-2020</h2>
 
 <table className="table">
   <thead>
@@ -137,14 +148,14 @@ function CarSuvVans(props) {
       <td>H</td>
     </tr>
   </tbody>
-</table>
+</table> */}
 
-        </>
-
-
+    </>
 
 
-    );
+
+
+  );
 }
 
 export default CarSuvVans;

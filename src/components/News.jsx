@@ -1,11 +1,11 @@
 import { useRef, useEffect } from "react";
 import tyre from "../assets/tyre-rotation1.png";
 import { gsap } from "gsap";
-import banner from "../assets/aboutTyres.jpg";
+import banner from "../assets/aboutBanner.jpg";
 
-import "./About.scoped.scss";
+// import "./About.scoped.scss";
 
-const About = () => {
+const News = () => {
   const element = useRef();
   //   const q = gsap.utils.selector(element);
   useEffect(() => {
@@ -19,7 +19,7 @@ const About = () => {
   return (
     <>
       <article className="bg-white">
-        <div className="vh-50 cover bg-center" style={{ backgroundImage: `url(${banner}` }}></div>
+        <div className="vh-75 bg-center" style={{ backgroundImage: `url(${banner}` }}></div>
         <div className="ph4 ph5-m ph6-l">
           <div className="pv5 f4 f2-ns measure center">
             <h1 className="fw6 f2 fl w-100 black-70 mt0 mb3 avenir">Концерн Artawheel Tire lndustrial Complex является крупнейшим производителем радиальных шин в Иране.</h1>
@@ -42,4 +42,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default News;

@@ -18,6 +18,9 @@ const NavBar = () => (
       <Link to='/' className="link dim white dib mr3"  title="Home">
         Home
       </Link>
+      <Link to='/news' className="link dim white dib mr3"  title="News">
+        News
+      </Link>
       <Link to='/about' className="link dim white dib mr3" title="About">
         About
       </Link>

@@ -2,15 +2,57 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-import { Card, Button } from "react-bootstrap";
 import cardImage from "../../assets/card-image.png";
 import FigureComponent from "../FigureComponent/FigureComponent";
 import pic from "../../assets/Truck.jpg";
+import Card from '../Card'
 
 
 
 function Trucks() {
   const navigateTo = useNavigate();
+  const cardData = [{
+    id: 0,
+    name: 'RL4',
+    sizes: ['315/80/22.5'],
+    setupAxis: 'рулевая',
+    loadIndex: '156/150',
+    speedIndex: 'L',
+    description: 'tractor tyres desc goes here.',
+    picture: cardImage
+  },
+  {
+    id: 1,
+    name: 'RT1',
+    sizes: ['315/80/22.5'],
+    setupAxis: 'ведущая',
+    loadIndex: '154/150',
+    speedIndex: 'L',
+    description: 'desc',
+    picture: cardImage
+  },
+  {
+    id: 2,
+    name: 'RM1',
+    sizes: ['385/65/22.5'],
+    setupAxis: 'прицепная',
+    loadIndex: '158',
+    speedIndex: 'L',
+    description: 'desc',
+    picture: cardImage
+  },
+  {
+    id: 3,
+    name: 'RL2',
+    sizes: ['385/65/22.5'],
+    setupAxis: 'прицепная',
+    loadIndex: '160',
+    speedIndex: 'L',
+    description: 'desc',
+    picture: cardImage
+  },
+
+  ]
 
   return (
     <>
@@ -21,7 +63,21 @@ function Trucks() {
         </figcaption>
       </figure>
 
-      <h2 className="f3 f2-m f1-l">RL4</h2>
+      {
+        cardData.map((el, idx) => {
+          return (
+            <div className='card-Container'>
+              <Card name={el.name} sizes={el.sizes} loadIndex={el.loadIndex} speedIndex={el.speedIndex} />
+            </div>
+
+          )
+        })
+      }
+
+
+
+
+      {/* <h2 className="f3 f2-m f1-l">RL4</h2>
 
       <div className="pa0">
         <div className="overflow-auto">
@@ -119,7 +175,7 @@ function Trucks() {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
 
 
 
