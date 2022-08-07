@@ -62,17 +62,18 @@ function Agriculture() {
       
         </figcaption>
       </figure>
-
+      <div className='container-card'>
       {
         cardData.map((el, idx) => {
           return (
             <div className='card-Container'>
-              <Card name={el.name} sizes={el.sizes} loadIndex={el.loadIndex} speedIndex={el.maxSpeed}  diameter={el.diameter} pr={el.pr} rim={el.rimWidth}/>
+              <Card data={el}/>
             </div>
 
           )
         })
       }
+      </div>
 
 
       {/* <h1>Шины для сельскохозяйственной техники</h1>

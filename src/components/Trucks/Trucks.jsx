@@ -54,6 +54,9 @@ function Trucks() {
 
   ]
 
+
+
+
   return (
     <>
       <figure className="mainbanner">
@@ -63,16 +66,21 @@ function Trucks() {
         </figcaption>
       </figure>
 
+    
+
+      
+      <div className='container-card'>
       {
         cardData.map((el, idx) => {
           return (
             <div className='card-Container'>
-              <Card name={el.name} sizes={el.sizes} loadIndex={el.loadIndex} speedIndex={el.speedIndex} />
+              <Card data={el} />
             </div>
 
           )
         })
       }
+      </div>
 
 
 

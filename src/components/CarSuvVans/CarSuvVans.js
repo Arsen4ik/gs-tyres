@@ -72,17 +72,18 @@ function CarSuvVans(props) {
                 })
             }
         </div> */}
-
+      <div className='container-card'>
       {
         cardData.map((el, idx) => {
           return (
             <div className='card-Container'>
-              <Card name={el.name} sizes={el.sizes} loadIndex={el.loadIndex} speedIndex={el.speedIndex} />
+              <Card data={el} key={idx}/>
             </div>
 
           )
         })
       }
+    </div>
 
       {/* <h2>GS-2020</h2>
 

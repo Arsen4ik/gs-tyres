@@ -10,9 +10,9 @@
    
 }
 
-#card-container {
-    display: flex;
-    justify-content: center;
+.container-card {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 table {
@@ -30,6 +30,11 @@ table {
         display: flex;
        
         justify-content: space-around;
+    }
+
+    .container-card {
+        
+        grid-template-columns: 1fr 1fr;
     }
 
     

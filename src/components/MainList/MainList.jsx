@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
 import "./MainList.scss";
-import car from "../../assets/car-64.png";
+// import car from "../../assets/car-64.png";
 import tyre from "../../assets/tyre-rotation1.png";
 import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
-import { ListGroup } from "react-bootstrap";
+
 
 const MainList = () => {
   const navigateTo = useNavigate();
@@ -23,7 +23,7 @@ const MainList = () => {
   });
 
   const handleListClick = (e) => {
-    console.log(e.target)
+    // console.log(e.target)
     const name = e.target.getAttribute('name')
     if (name === '0') {
       // console.log(name);
