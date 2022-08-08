@@ -17,37 +17,80 @@ function Agriculture() {
     id: 0,
     name: 'GSX 2000 SUPER',
     sizes: ['18.4-15/30'],
-    loadIndex: ['2430 (139)', '2900 (145)', '3250 (149)','2650 (142)', '3000 (146)'],
+    models: {
+      pr: ['8', '10', '12'],
+      loadIndex: ['2430 (139)', '2900 (145)', '3250 (149)'],
+      diameter: ['1600+/-10', '1600+/-10', '1600+/-10'],
+      rimWidth: ['16x30','16x30','16x30'],
+    },
     maxSpeed: '25',
     description: 'tractor',
     picture: cardImage,
-    diameter: ['1600+/-10', '1600+/-10', '1600+/-10', '1700+/-10', '1700+/-10'],
-    pr: ['8', '10', '12', '8', '10'],
-    rimWidth: ['16x30','16x30','16x30','16x34', '16x34'],
+    
+    
+    
   },
   {
     id: 1,
-    name: 'GS 2040',
-    sizes: ['12.4-11/24', '14.9-13/24', '14.9-13/24'],
-    loadIndex: ['5,5 х 16'],
-    maxSpeed: '40',
+    name: 'GSX 2000 SUPER',
+    models: {
+      sizes: [ '18.4-15/34'],
+      pr: [ '8', '10'],
+      loadIndex: ['2650 (142)', '3000 (146)'],
+      diameter: [ '1700+/-10', '1700+/-10'],
+      rimWidth: ['16x34', '16x34'],
+    },
+    maxSpeed: '25',
     description: 'tractor',
     picture: cardImage,
-    diameter: ['1160+/-10', '1265+/-10', '1265+/-10'],
-    pr: ['8'],
-    rimWidth: ['11 x 24','13x24', '13x24'],
+    
   },
   {
     id: 2,
-    name: 'GS 800',
-    sizes: ['7.50-16'],
-    loadIndex: ['875 (103)'],
-    maxSpeed: '60',
+    name: 'GS 2040',
+   
+    models: {
+      sizes: ['12.4-11/24'],
+      pr: ['8'],
+      loadIndex: ['5,5 х 16'],
+      diameter: ['1160+/-10'],
+      rimWidth: ['11 x 24'],
+    },
+    maxSpeed: '40',
     description: 'tractor',
     picture: cardImage,
-    diameter: ['825+/-8'],
-    pr: ['8', '8', '10'],
-    rimWidth: ['11 x 24','13x24', '13x24'],
+   
+  },
+  {
+    id: 3,
+    name: 'GS 2040',
+    models: {
+      sizes: [ '14.9-13/24', '14.9-13/24'],
+      loadIndex: ['5,5 х 16'],
+      diameter: [ '1265+/-10', '1265+/-10'],
+      pr: ['8', '10'],
+      rimWidth: ['13x24', '13x24'],
+    },
+    maxSpeed: '40',
+    description: 'tractor',
+    picture: cardImage,
+  
+  },
+  {
+    id: 4,
+    name: 'GS 800',
+    models: {
+      sizes: ['7.50-16'],
+      loadIndex: ['875 (103)'],
+      
+      diameter: ['825+/-8'],
+      pr: [ '10'],
+      rimWidth: ['13x24'],
+    },
+      maxSpeed: '60',
+      description: 'tractor',
+      picture: cardImage,
+    
   },
  
 

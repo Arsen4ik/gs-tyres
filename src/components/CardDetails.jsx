@@ -5,7 +5,7 @@ const CardDetails = () => {
 
     
 
-    // console.log(location.state[0])
+    console.log(location.state[0])
 
   return (
     <>
@@ -15,10 +15,20 @@ const CardDetails = () => {
     <br />
       <article className="pa3 pa5-ns">
         <h1 className="f4 bold center mw6">{location.state[0].name}</h1>
+        {/* <h1 className="f6 bold center mw6">{location.state[0].sizes}</h1> */}
+       
         <ul className="list pl0 ml0 center mw6 ba b--light-silver br2">
-          <li className="ph3 pv3 bb b--light-silver">Индекс нагрузки: {location.state[0].loadIndex}</li>
-          <li className="ph3 pv3 bb b--light-silver">Индекс скорости: {location.state[0].speedIndex}</li>
-          <li className="ph3 pv3 bb b--light-silver">Размеры: {location.state[0].sizes.join(' ')}</li>
+          
+          {location.state[0].models ? <li className="ph3 pv3 bb b--light-silver">{location.state[0].models}</li> : null } 
+          {/* {
+            location.state[0].speedIndex ? <li className="ph3 pv3 bb b--light-silver">Индекс скорости: {location.state[0].speedIndex}</li> : null
+          }
+          
+          
+          {
+            location.state[0].setupAxis ? <li className="ph3 pv3 bb b--light-silver">Ось установки: {location.state[0].setupAxis}</li> : null
+          } */}
+          
         </ul>
       </article>
     </>
