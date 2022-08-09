@@ -17,7 +17,7 @@ const Card = (props) => {
                 <div className="pa2 bt b--black-20">
                     {/* <a className="f6 db link dark-blue hover-blue" href="#">Jesse Grant</a> */}
                     <h3 className="f4 gray mv1">{ props.data.name }</h3>
-                    <h3 className="f6 gray mv1">{ props.data.sizes }</h3>
+                    <h3 className="f6 gray mv1">{ props.data.size }</h3>
                    
                     <a className="link tc ph3 pv1 db bg-animate bg-dark-green hover-bg-green white f6 br1 card-button" onClick={handleCardButtonClick}>Описание</a>
                 </div>

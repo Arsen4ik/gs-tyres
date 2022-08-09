@@ -24,9 +24,7 @@ const NavBar = () => (
       <Link to='/about' className="link dim white dib mr3" title="About">
         About
       </Link>
-      <Link to='/contacts' className="link dim white dib mr3" title="Contacts">
-      Contact
-      </Link>
+      
      
     </nav>
   </header>

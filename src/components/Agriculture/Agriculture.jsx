@@ -16,244 +16,146 @@ function Agriculture() {
   const cardData = [{
     id: 0,
     name: 'GSX 2000 SUPER',
-    sizes: ['18.4-15/30'],
-    models: {
-      pr: ['8', '10', '12'],
-      loadIndex: ['2430 (139)', '2900 (145)', '3250 (149)'],
-      diameter: ['1600+/-10', '1600+/-10', '1600+/-10'],
-      rimWidth: ['16x30','16x30','16x30'],
-    },
+    size: ['18.4-15/30'],
+    models: [
+      {
+        modelName: 'Вариант1',
+        pr: ['8'],
+        loadIndex: ['2430 (139)',],
+        diameter: ['1600+/-10',],
+        rimWidth: ['16x30',],
+        speedIndex: '25'
+      },
+      {
+        modelName: 'Вариант2',
+        pr: ['10',],
+        loadIndex: ['2900 (145)',],
+        diameter: [, '1600+/-10',],
+        rimWidth: ['16x30',],
+        speedIndex: '25'
+      },
+      {
+        modelName: 'Вариант3',
+        pr: ['12'],
+        loadIndex: ['3250 (149)'],
+        diameter: ['1600+/-10'],
+        rimWidth: ['16x30'],
+        speedIndex: '25'
+      },
+    ],
     maxSpeed: '25',
     description: 'tractor',
     picture: cardImage,
-    
-    
-    
   },
   {
     id: 1,
     name: 'GSX 2000 SUPER',
-    models: {
-      sizes: [ '18.4-15/34'],
-      pr: [ '8', '10'],
-      loadIndex: ['2650 (142)', '3000 (146)'],
-      diameter: [ '1700+/-10', '1700+/-10'],
-      rimWidth: ['16x34', '16x34'],
-    },
-    maxSpeed: '25',
+    size: ['18.4-15/34'],
+    models: [
+      {
+        modelName: 'Вариант1',
+        pr: ['8'],
+        loadIndex: ['2650 (142)'],
+        diameter: ['1700+/-10'],
+        rimWidth: ['16x34'],
+        maxSpeed: '40',
+      },
+      {
+        modelName: 'Вариант2',
+        pr: ['10'],
+        loadIndex: ['3000 (146)'],
+        diameter: ['1700+/-10'],
+        rimWidth: ['16x34'],
+        maxSpeed: '40',
+      },
+    ],
+
     description: 'tractor',
     picture: cardImage,
-    
+
   },
   {
     id: 2,
     name: 'GS 2040',
-   
-    models: {
-      sizes: ['12.4-11/24'],
+    size: ['12.4-11/24'],
+    models: [{
+      modelName: 'Вариант1',
       pr: ['8'],
       loadIndex: ['5,5 х 16'],
       diameter: ['1160+/-10'],
       rimWidth: ['11 x 24'],
-    },
-    maxSpeed: '40',
+      maxSpeed: '40',
+    }],
     description: 'tractor',
     picture: cardImage,
-   
+
   },
   {
     id: 3,
     name: 'GS 2040',
-    models: {
-      sizes: [ '14.9-13/24', '14.9-13/24'],
+    size: ['14.9-13/24'],
+    models: [{
+      modelName: 'Вариант1',
       loadIndex: ['5,5 х 16'],
-      diameter: [ '1265+/-10', '1265+/-10'],
-      pr: ['8', '10'],
-      rimWidth: ['13x24', '13x24'],
+      diameter: ['1265+/-10'],
+      pr: ['8'],
+      rimWidth: ['13x24'],
+      maxSpeed: '40',
     },
-    maxSpeed: '40',
+    {
+      modelName: 'Вариант2',
+      loadIndex: ['5,5 х 16'],
+      diameter: ['1265+/-10'],
+      pr: ['10'],
+      rimWidth: ['13x24'],
+      maxSpeed: '40',
+    },
+    ],
+    
     description: 'tractor',
     picture: cardImage,
-  
+
   },
   {
     id: 4,
     name: 'GS 800',
-    models: {
-      sizes: ['7.50-16'],
+    size: ['7.50-16'],
+    models: [{
+      modelName: 'Вариант1',
       loadIndex: ['875 (103)'],
-      
       diameter: ['825+/-8'],
-      pr: [ '10'],
+      pr: ['10'],
       rimWidth: ['13x24'],
-    },
       maxSpeed: '60',
-      description: 'tractor',
-      picture: cardImage,
+    }
+    ],
     
+    description: 'tractor',
+    picture: cardImage,
   },
- 
-
-]
+  ]
 
   return (
     <>
       <figure className="mainbanner">
         <img src={pic} alt="tractor" />
         <figcaption>
-          {/* <span className="sloganTractor">Шины для сельскохозяйственной техники</span> */}
-      
+          <span className="sloganTractor">Шины для сельскохозяйственной техники</span>
+
         </figcaption>
       </figure>
       <div className='container-card'>
-      {
-        cardData.map((el, idx) => {
-          return (
-            <div className='card-Container'>
-              <Card data={el}/>
-            </div>
+        {
+          cardData.map((el, idx) => {
+            return (
+              <div className='card-Container'>
+                <Card data={el} />
+              </div>
 
-          )
-        })
-      }
+            )
+          })
+        }
       </div>
-
-
-      {/* <h1>Шины для сельскохозяйственной техники</h1>
-      <h2>GSX 2000 SUPER</h2>
-
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">№</th>
-            <th scope="col">Размер</th>
-            <th scope="col">Норма слойности (pr)</th>
-            <th scope="col">Ширина обода (дюйм)</th>
-            <th scope="col">Максимальная скорость км/ч</th>
-            <th scope="col">Индекс нагрузки</th>
-            <th scope="col">Диаметр (мм)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>18.4-15/30</td>
-            <td>8</td>
-            <td>16x30</td>
-            <td>25</td>
-            <td>2430 (139)</td>
-            <td>1600+/-10</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>18.4-15/30</td>
-            <td>10</td>
-            <td>16x30</td>
-            <td>25</td>
-            <td>2900 (145)</td>
-            <td>1600+/-10</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>18.4-15/30</td>
-            <td>12</td>
-            <td>16x30</td>
-            <td>25</td>
-            <td>3250 (149)</td>
-            <td>1600+/-10</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>18.4-15/34</td>
-            <td>8</td>
-            <td>16x34</td>
-            <td>25</td>
-            <td>2650 (142)</td>
-            <td>1700+/-10</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>18.4-15/34</td>
-            <td>10</td>
-            <td>16x34</td>
-            <td>25</td>
-            <td>3000 (146)</td>
-            <td>1700+/-10</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>GS 2040</h2>
-
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">№</th>
-            <th scope="col">Размер</th>
-            <th scope="col">Норма слойности (pr)</th>
-            <th scope="col">Ширина обода (дюйм)</th>
-            <th scope="col">Максимальная скорость км/ч</th>
-            <th scope="col">Индекс нагрузки</th>
-            <th scope="col">Диаметр (мм)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>12.4-11/24</td>
-            <td>8</td>
-            <td>11 x 24</td>
-            <td>40</td>
-            <td>1425 (121)</td>
-            <td>1160+/-10</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>14.9-13/24</td>
-            <td>8</td>
-            <td>13x24</td>
-            <td>40</td>
-            <td>1800 (128)</td>
-            <td>1265+/-10</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>14.9-13/24</td>
-            <td>10</td>
-            <td>13x24</td>
-            <td>40</td>
-            <td>2000 (132)</td>
-            <td>1265+/-10</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>GS 800</h2>
-
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">№</th>
-            <th scope="col">Размер</th>
-            <th scope="col">Норма слойности (pr)</th>
-            <th scope="col">Ширина обода (дюйм)</th>
-            <th scope="col">Максимальная скорость км/ч</th>
-            <th scope="col">Индекс нагрузки</th>
-            <th scope="col">Диаметр (мм)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>7.50-16 </td>
-            <td>8</td>
-            <td>5,5 х 16</td>
-            <td>60</td>
-            <td>875 (103)</td>
-            <td>825+/-8</td>
-          </tr>
-        </tbody>
-      </table> */}
     </>
   );
 }

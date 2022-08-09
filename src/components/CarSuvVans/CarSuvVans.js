@@ -18,19 +18,82 @@ function CarSuvVans(props) {
   const cardData = [{
     id: 0,
     name: 'GS-2020',
-    sizes: ['185/65/R15', '185/65/R14', '185/60/R14'],
-    loadIndex: '86',
-    speedIndex: 'H',
-    description: 'First all-season tyre fully focused on UHP segment. Unique performances in all-season segment.',
+    size: ['185/65/R15'],
+    models: [
+      {
+        loadIndex: '86',
+        speedIndex: 'H',
+      }
+    ],
+    description: 'car',
     picture: cardImage
   },
   {
     id: 1,
+    name: 'GS-2020',
+    size: ['185/65/R14'],
+    models: [
+      {
+        loadIndex: '86',
+        speedIndex: 'H',
+      }
+    ],
+    description: 'car',
+    picture: cardImage
+  },
+  {
+    id: 2,
+    name: 'GS-2020',
+    size: ['185/60/R14'],
+    models: [
+      {
+        loadIndex: '86',
+        speedIndex: 'H',
+      }
+    ],
+    
+    description: 'car',
+    picture: cardImage
+  },
+  {
+    id: 3,
     name: 'RG-550',
-    sizes: ['205/55/R16', '195/65/R15', '185/65/R15'],
-    loadIndex: '86',
-    speedIndex: 'H',
-    description: 'First all-season tyre fully focused on UHP segment. Unique performances in all-season segment.',
+    size: ['205/55/R16'],
+    models: [
+      {
+        loadIndex: '86',
+        speedIndex: 'H',
+      }
+    ],
+    
+    description: 'car',
+    picture: cardImage
+  },
+  {
+    id: 4,
+    name: 'RG-550',
+    size: ['195/65/R15'],
+    models: [
+      {
+        loadIndex: '86',
+        speedIndex: 'H',
+      }
+    ],
+    
+    description: 'car',
+    picture: cardImage
+  },
+  {
+    id: 5,
+    name: 'RG-550',
+    size: ['185/65/R15'],
+    models: [
+      {
+        loadIndex: '86',
+        speedIndex: 'H',
+      }
+    ],
+    description: 'car',
     picture: cardImage
   },
 
@@ -73,17 +136,17 @@ function CarSuvVans(props) {
             }
         </div> */}
       <div className='container-card'>
-      {
-        cardData.map((el, idx) => {
-          return (
-            <div className='card-Container'>
-              <Card data={el} key={idx}/>
-            </div>
+        {
+          cardData.map((el, idx) => {
+            return (
+              <div className='card-container'>
+                <Card data={el} key={idx} />
+              </div>
 
-          )
-        })
-      }
-    </div>
+            )
+          })
+        }
+      </div>
 
       {/* <h2>GS-2020</h2>
 

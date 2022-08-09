@@ -11,8 +11,14 @@
 }
 
 .container-card {
-    display: grid;
-    grid-template-columns: 1fr;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 
 table {
@@ -32,10 +38,10 @@ table {
         justify-content: space-around;
     }
 
-    .container-card {
+    // .container-card {
         
-        grid-template-columns: 1fr 1fr;
-    }
+    //     // grid-template-columns: 1fr 1fr;
+    // }
 
     
 } 

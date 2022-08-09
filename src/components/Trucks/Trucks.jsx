@@ -14,41 +14,56 @@ function Trucks() {
   const cardData = [{
     id: 0,
     name: 'RL4',
-    sizes: ['315/80/22.5'],
-    setupAxis: 'рулевая',
-    loadIndex: '156/150',
-    speedIndex: 'L',
-    description: 'tractor tyres desc goes here.',
+    size: ['315/80/22.5'],
+    models: [
+      {
+        setupAxis: 'рулевая',
+        loadIndex: '156/150',
+        speedIndex: 'L',
+      }
+    ],
+    description:  'truck',
     picture: cardImage
   },
   {
     id: 1,
     name: 'RT1',
-    sizes: ['315/80/22.5'],
-    setupAxis: 'ведущая',
-    loadIndex: '154/150',
-    speedIndex: 'L',
-    description: 'desc',
+    size: ['315/80/22.5'],
+    models: [
+      {
+        setupAxis: 'ведущая',
+        loadIndex: '154/150',
+        speedIndex: 'L',
+      }
+    ],
+    description:  'truck',
     picture: cardImage
   },
   {
     id: 2,
     name: 'RM1',
-    sizes: ['385/65/22.5'],
-    setupAxis: 'прицепная',
-    loadIndex: '158',
-    speedIndex: 'L',
-    description: 'desc',
+    size: ['385/65/22.5'],
+    models: [{
+      setupAxis: 'прицепная',
+      loadIndex: '158',
+      speedIndex: 'L',
+    }
+    ],
+    description:  'truck',
     picture: cardImage
   },
   {
     id: 3,
     name: 'RL2',
-    sizes: ['385/65/22.5'],
-    setupAxis: 'прицепная',
-    loadIndex: '160',
-    speedIndex: 'L',
-    description: 'desc',
+    size: ['385/65/22.5'],
+    models: [
+      {
+        setupAxis: 'прицепная',
+        loadIndex: '160',
+        speedIndex: 'L',
+      }
+    ],
+    description: 'truck',
     picture: cardImage
   },
 
@@ -66,20 +81,20 @@ function Trucks() {
         </figcaption>
       </figure>
 
-    
 
-      
+
+
       <div className='container-card'>
-      {
-        cardData.map((el, idx) => {
-          return (
-            <div className='card-Container'>
-              <Card data={el} />
-            </div>
+        {
+          cardData.map((el, idx) => {
+            return (
+              <div className='card-Container'>
+                <Card data={el} />
+              </div>
 
-          )
-        })
-      }
+            )
+          })
+        }
       </div>
 
 

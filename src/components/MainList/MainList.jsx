@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 import "./MainList.scss";
-// import car from "../../assets/car-64.png";
+
 import tyre from "../../assets/tyre-rotation1.png";
 import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
